@@ -1,7 +1,6 @@
 package com.tts.Users_swaggerAPI.controller;
 
 
-import com.tts.Users_swaggerAPI.model.UserV1;
 import com.tts.Users_swaggerAPI.model.UserV2;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
