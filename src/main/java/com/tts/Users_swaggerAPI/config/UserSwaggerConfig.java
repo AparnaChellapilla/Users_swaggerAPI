@@ -32,10 +32,10 @@ public class UserSwaggerConfig {
 
     private ApiInfo buildApiInfoV1() {
         return new ApiInfoBuilder()
-                .title("Menu Items API")
+                .title("Users API")
                 .description("REST API for interacting with users")
                 .version("1.0.0")
-                .contact(new Contact("Aparna Chellapilla", "website.com", "ac@gmail.com"))
+                .contact(new Contact("Aparna Chellapilla", "resources/open-api/", "ac@gmail.com"))
                 .license("Apache License Version 2.0")
                 .licenseUrl("https://www.apache.org/licenses/LICENSE-2.0")
                 .build();
@@ -54,10 +54,10 @@ public class UserSwaggerConfig {
 
     private ApiInfo buildApiInfoV2() {
         return new ApiInfoBuilder()
-                .title("Menu Items API")
+                .title("Users API")
                 .description("REST API for interacting with menu items")
                 .version("2.0.0")
-                .contact(new Contact("Aparna Chellapilla", "website.com", "ac@gmail.com"))
+                .contact(new Contact("Aparna Chellapilla", "resources/open-api/", "ac@gmail.com"))
                 .license("Apache License Version 2.0")
                 .licenseUrl("https://www.apache.org/licenses/LICENSE-2.0")
                 .build();

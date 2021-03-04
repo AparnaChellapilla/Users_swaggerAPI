@@ -1,20 +1,27 @@
 package com.tts.Users_swaggerAPI.model;
 
+import io.swagger.annotations.ApiModelProperty;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
 public class UserV2 {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @ApiModelProperty(notes = "Userid ")
     private long id;
-
-    @Size(min = 3, max = 25)
+    @ApiModelProperty(notes = "User's firstname")
+    @NotEmpty(message = "Please provide a firstname")
+    @Size(min = 2, max = 20)
     private String firstName;
+    @NotEmpty(message = "Please provide a lastName")
     @Size(min = 2, max = 20)
     private String lastName;
+    @NotEmpty(message = "State cannot be empty,Please enter the Users State")
     @Size(min = 2, max = 20)
     private String state;
 

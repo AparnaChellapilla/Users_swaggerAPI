@@ -1,5 +1,7 @@
 package com.tts.Users_swaggerAPI.model;
 
+import io.swagger.annotations.ApiModelProperty;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -9,10 +11,14 @@ public class UserV1 {
 
 
     @Id
+    @ApiModelProperty(notes = "Userid")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    @ApiModelProperty(notes = "Please enter your first Name")
     private String firstName;
+    @ApiModelProperty(notes = "Please enter your last name")
     private String lastName;
+    @ApiModelProperty(notes = "Please enter your state , State cannot be empty")
     private String state;
 
     public UserV1() {
